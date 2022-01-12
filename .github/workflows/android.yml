@@ -1,11 +1,11 @@
 
-name: Build My Luca App
+name: Build My Corona Warn App
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -60,5 +60,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: apk/app-debug.apk
-          asset_name: MyLucaApp.apk
+          asset_name: MyCWA.apk
           asset_content_type: application/zip
