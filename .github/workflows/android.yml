@@ -31,7 +31,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: apk
-        path: app/build/outputs/apk/debug/app-debug.apk 
+        path: cwa-app-android/cwa-app-android/Corona-Warn-App/build/outputs/apk/device/debug/Corona-Warn-App-device-debug.apk 
       
   release:
     name: Release APK
